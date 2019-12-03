@@ -42,7 +42,7 @@ docker container run hello-world
 
 #### Tratamento de possíveis problemas
 
-Se o acesso a internet da máquina passar por controle de tráfego (aquele que bloqueia o acesso a determinadas páginas) você poderá encontrar problemas no passo do **apt-key**. Caso enfrente esse problema, execute o comando abaixo:
+Se o acesso a internet da máquina passar por controle de tráfego (aquele que bloqueia o acesso a determinadas páginas), você poderá encontrar problemas no passo do **apt-key**. Caso enfrente esse problema, execute o comando abaixo:
 
 ```
 wget -qO- https://get.docker.com/gpg | sudo apt-key add -
