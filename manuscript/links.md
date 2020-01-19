@@ -129,8 +129,7 @@
 129. https://docs.docker.com/engine/reference/builder/
 130. https://labs.ctl.io/dockerfile-add-vs-copy/
 131. https://curl.haxx.se/
-132. https://github.com/jenkinsci/docker/blob/83ce6f6070f1670563a00d0f61d04edd62b78f4f/
-Dockerfile#L36
+132. https://github.com/jenkinsci/docker/blob/83ce6f6070f1670563a00d0f61d04edd62b78f4f/Dockerfile#L36
 133. https://hub.docker.com/_/debian/
 134. https://hub.docker.com/_/buildpack-deps/
 135. https://hub.docker.com/r/gliderlabs/alpine/
