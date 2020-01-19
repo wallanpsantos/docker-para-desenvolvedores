@@ -56,7 +56,7 @@ Como exemplo de ferramentas de automação de infraestrutura temos o [Puppet](ht
 
 A diferença entre a solução Docker e gerência de configuração pode parecer bem tênue, pois ambas podem suportar a configuração necessária de toda infraestrutura que uma aplicação demanda para ser implantada, mas achamos que uma das distinções mais relevantes está no seguinte fato: a imagem é uma abstração completa e não requer qualquer tratamento para lidar com as mais variadas distribuições GNU/Linux existentes, já que a imagem Docker carrega em si uma cópia completa dos arquivos de uma distribuição enxuta.
 
-Carregar em si a cópia de uma distribuição GNU/Linux não costuma ser problema para o Docker, pois utilizando o modelo de camadas, economiza bastante recurso, reutilizando as camadas de base. Leia [esse artigo](http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/) para entender mais sobre armazenamento do Docker.
+Carregar em si a cópia de uma distribuição GNU/Linux não costuma ser problema para o Docker, pois utilizando o modelo de camadas, economiza bastante recurso, reutilizando as camadas de base. Leia [esse artigo](https://imasters.com.br/devsecops/entendendo-o-armazenamento-de-dados-docker) para entender mais sobre armazenamento do Docker.
 
 Outra vantagem da imagem em relação a gerência de configuração é que, utilizando a imagem, é possível disponibilizar o pacote completo da aplicação em um repositório e, esse “produto final”, ser utilizado facilmente sem necessidade de configuração completa. Apenas um arquivo de configuração e um comando costumam ser suficientes para iniciar uma aplicação criada como imagem Docker.
 
