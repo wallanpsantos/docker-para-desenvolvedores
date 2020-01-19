@@ -251,7 +251,7 @@ Bom exemplo para inspiração é o [Dockerfile oficial do Jenkins](https://githu
 ENV JENKINS_VERSION 1.625.3
 ENV JENKINS_SHA 537d910f541c25a23499b222ccd37ca25e074a0c
 
-RUN curl -fL https://mirrors.jenkins-ci.org/war-stable/$JENKINS_VERSION/jenkins.war -o /usr/share/jenkins/jenkins.war \
+RUN curl -fL http://mirrors.jenkins-ci.org/war-stable/$JENKINS_VERSION/jenkins.war -o /usr/share/jenkins/jenkins.war \
   && echo "$JENKINS_SHA /usr/share/jenkins/jenkins.war" | sha1sum -c -
 ```
 
