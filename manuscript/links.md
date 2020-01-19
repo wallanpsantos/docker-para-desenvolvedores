@@ -12,7 +12,7 @@
 12. https://twitter.com/diogocfernandes
 13. http://techfree.com.br/2015/06/sera-que-esse-modelo-de-containers-e-um-hype/
 14. https://www.thoughtworks.com/continuous-delivery
-15. http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/
+15. https://imasters.com.br/devsecops/entendendo-o-armazenamento-de-dados-docker
 16. https://docs.docker.com/engine/reference/builder/
 17. https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
 18. https://pt.wikipedia.org/wiki/Escalabilidade
@@ -24,7 +24,7 @@
 24. https://puppetlabs.com/
 25. https://www.ansible.com/
 26. https://www.chef.io/chef/
-27. http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/
+27. https://imasters.com.br/devsecops/entendendo-o-armazenamento-de-dados-docker
 28. https://pt.wikipedia.org/wiki/Fluxos_padr%C3%A3o
 29. http://techfree.com.br/2016/03/porque-usar-docker/
 30. http://man7.org/linux/man-pages/man7/namespaces.7.html
@@ -53,7 +53,7 @@
 53. http://searchdatacenter.techtarget.com/definition/back-end
 54. https://en.wikipedia.org/wiki/Aufs
 55. https://en.wikipedia.org/wiki/Copy-on-write
-56. http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/
+56. https://imasters.com.br/devsecops/entendendo-o-armazenamento-de-dados-docker
 57. https://docs.docker.com/compose/networking/
 58. https://docs.docker.com/machine/
 59. https://docs.docker.com/machine/drivers/
