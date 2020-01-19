@@ -87,7 +87,7 @@
 87. https://www.thoughtworks.com/continuous-integration
 88. https://github.com/gomex/exemplo-12factor-docker.git
 89. https://12factor.net/
-90. https://techfree.com.br/2016/06/dockerizando-aplicacoes-base-de-codigo/
+90. https://imasters.com.br/desenvolvimento/dockerizando-aplicacoes-base-de-codigo
 91. https://github.com/gomex/exemplo-12factor-docker
 92. https://12factor.net/
 93. https://github.com/gomex/exemplo-12factor-docker
