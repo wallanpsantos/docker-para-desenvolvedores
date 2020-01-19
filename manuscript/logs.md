@@ -1,6 +1,6 @@
 # Logs
 
-A décima primeira boa prática, na lista do modelo [12factor](http://12factor.net/pt_br), é **“Logs”**.
+A décima primeira boa prática, na lista do modelo [12factor](https://12factor.net/pt_br), é **“Logs”**.
 
 ![](images/logs1.png)
 
