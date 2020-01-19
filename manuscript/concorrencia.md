@@ -87,7 +87,7 @@ http {
     set $alias "apps";
 
     location / {
-      proxy_pass https://$alias;
+      proxy_pass http://$alias;
     }
   }
 }
@@ -95,7 +95,7 @@ http {
 
 No arquivo de configuração acima, foram introduzidas algumas novidades. A primeira, **“resolver 127.0.0.11“**, é o serviço DNS interno do Docker. Usando essa abordagem é possível efetuar o balanceamento de carga via nome, usando recurso interno do Docker. Para mais detalhes sobre o funcionamento do DNS interno do Docker, veja esse documento ([https://docs.docker.com/engine/userguide/networking/configure-dns/](https://docs.docker.com/engine/userguide/networking/configure-dns/)) (apenas em inglês).
 
-A segunda novidade, função set **$alias “apps”;**, responsável por especificar o nome **“apps”** usado na configuração do proxy reverso, em seguida **“proxy_pass https://$alias;“**. Vale salientar, o **“apps”** é o nome da rede especificada dentro do arquivo **docker-compose.yml**. Nesse caso, o balanceamento é feito para a rede, todo novo contêiner que entra nessa rede é automaticamente adicionado ao balanceamento de carga.
+A segunda novidade, função set **$alias “apps”;**, responsável por especificar o nome **“apps”** usado na configuração do proxy reverso, em seguida **“proxy_pass http://$alias;“**. Vale salientar, o **“apps”** é o nome da rede especificada dentro do arquivo **docker-compose.yml**. Nesse caso, o balanceamento é feito para a rede, todo novo contêiner que entra nessa rede é automaticamente adicionado ao balanceamento de carga.
 
 Para efetuar a construção do **worker** temos o diretório **worker**  contendo os arquivos **Dockerfile** (responsável por criar a imagem utilizada), **app.py** (aplicação usada em todos os capítulos) e **requirements.txt** (descreve as dependências do app.py).
 
