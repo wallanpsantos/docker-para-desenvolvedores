@@ -1,10 +1,10 @@
 ## Posso rodar aplicações GUI?
 Com certeza, é plenamente possível rodar aplicações GUI em containers, o que significa que todas as vantagens de utilizar o Docker se aplicam também às aplicações gráficas.
 
-Além disso é possível fazer a aplicação funcionar em multiplos sistemas (Linux, Windows e macOS) apenas construindo ela para Linux.
+Além disso é possível fazer a aplicação funcionar em múltiplos sistemas (Linux, Windows e macOS) apenas construindo ela para Linux.
 
 ### Como?
-Antes de mais nada... Em 99% dos casos é preciso liberar o acesso ao X: `xhost local` (essa liberação ficará vigente até desligar/reinicar o host)
+Antes de mais nada... Em 99% dos casos é preciso liberar o acesso ao X: `xhost local` (essa liberação ficará vigente até desligar/reiniciar o host)
 
 Comando mais simples o possível, monta o socket X11 do host no container e define o display (note que vamos "evoluindo" o comando aos poucos, mas pode usar apenas as flags que achar necessário - as únicas obrigatórias são a montagem de volume do `/tmp/.X11-unix` e a variável de ambiente `DISPLAY`):
 
@@ -95,7 +95,7 @@ imagem [comando]
 ```
 
 ### E o docker-compose?
-Funciona normalmente... Basta montar o socket X11 e definir a variável de ambiente no docker-compose.yml e será possível iniciar multiplos aplicativos com apenas um comando.
+Funciona normalmente... Basta montar o socket X11 e definir a variável de ambiente no docker-compose.yml e será possível iniciar múltiplos aplicativos com apenas um comando.
 
 ### No Windows e macOS
 
