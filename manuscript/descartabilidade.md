@@ -50,7 +50,7 @@ if __name__ == "__main__":
     server.start()
 ```
 
-No código acima, adicionamos tratamento para quando receber um sinal de SIGTERM, finalizar rapidamente o processo. Sem o tratamento, o código demora mais para ser desligado. Dessa forma, concluímos que a solução é descartável o suficiente. Podemos desligar e reiniciar os containers em outro Docker Host e a mudança não causará impacto na integridade dos dados.
+No código acima, adicionamos tratamento para quando receber um sinal de SIGTERM, finalizar rapidamente o processo. Sem o tratamento, o código demora mais para ser desligado. Dessa forma, concluímos que a solução é descartável o suficiente. Podemos desligar e reiniciar os contêineres em outro Docker Host e a mudança não causará impacto na integridade dos dados.
 
 Para fins de entendimento sobre o que trabalhamos aqui, cabe esclarecimento, de acordo com o Wikipedia, sinal é: “(...) notificação assíncrona enviada a processos com o objetivo de notificar a ocorrência de um evento.” E, o SIGTERM: “(...) nome de um sinal conhecido por um processo informático em sistemas operativos POSIX. Este é o sinal padrão enviado pelos comandos kill e killall. Ele causa o término do processo, como em SIGKILL, porém pode ser interpretado ou ignorado pelo processo. Com isso, SIGTERM realiza um encerramento mais amigável, permitindo a liberação de memória e o fechamento dos arquivos.”
 

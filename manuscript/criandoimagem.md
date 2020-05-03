@@ -81,7 +81,7 @@ Para visualizar a lista de imagens e encontrar a que acabou de criar, execute no
 docker image list
 ```
 
-Para testar sua nova imagem, vamos criar um container a partir dela e verificar se o nginx está instalado:
+Para testar sua nova imagem, vamos criar um contêiner a partir dela e verificar se o nginx está instalado:
 
 ```
 docker container run -it --rm meuubuntu:nginx dpkg -l nginx

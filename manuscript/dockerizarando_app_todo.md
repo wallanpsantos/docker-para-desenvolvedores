@@ -1,4 +1,4 @@
-# Transformando sua aplicação em container
+# Transformando sua aplicação em contêiner
 
 Evoluímos continuamente para entregar aplicações cada vez melhores, em menor tempo, replicáveis e escaláveis. Entretanto, os esforços e aprendizados para atingir esse nível de maturidade muitas vezes não são simples de serem alcançados.
 

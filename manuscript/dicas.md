@@ -66,7 +66,7 @@ Para criar um volume em determinado contêiner, execute da seguinte forma:
 docker container run --rm -v /usr/share/nginx/html --name nginx_teste nginx
 ```
 
-Com a execução desse container, teremos serviço Nginx que usa o volume criado para persistir seus dados; os dados persistirão mesmo após o contêiner ser removido.
+Com a execução desse contêiner, teremos serviço Nginx que usa o volume criado para persistir seus dados; os dados persistirão mesmo após o contêiner ser removido.
 
 É boa prática de administração de sistema fazer cópias de segurança (backups) periódicas e, para executar essa atividade (extrair dados), use o comando:
 

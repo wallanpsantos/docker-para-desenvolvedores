@@ -1,4 +1,4 @@
-## Container ou máquina virtual?
+## Contêiner ou máquina virtual?
 
 Após o sucesso repentino do Docker - virtualização com base em contêineres - muitas pessoas têm se questionado sobre possível migração do modelo de máquina virtual para contêineres.
 
