@@ -1,9 +1,9 @@
 # Criando sua própria imagem no Docker
 
 
-Antes de explicarmos como criar sua imagem, vale a pena tocarmos em uma questão que normalmente confunde iniciantes do docker: “Imagem ou contêinere?”
+Antes de explicarmos como criar sua imagem, vale a pena tocarmos em uma questão que normalmente confunde iniciantes do docker: “Imagem ou contêiner?”
 
-### Qual a diferença entre Imagem e contêinere?
+### Qual a diferença entre Imagem e Contêiner?
 
 Traçando um paralelo com o conceito de [orientação a objeto](https://pt.wikipedia.org/wiki/Orienta%C3%A7%C3%A3o_a_objetos), a **imagem** é a classe e o **contêiner** o objeto. A imagem é a abstração da infraestrutura em estado somente leitura, de onde será instanciado o contêiner.
 
@@ -90,7 +90,7 @@ docker container run -it --rm meuubuntu:nginx dpkg -l nginx
 Se quiser validar, pode executar o mesmo comando na imagem oficial do ubuntu:
 
 ```
-docker contêiner run -it --rm ubuntu:16.04 dpkg -l nginx
+docker container run -it --rm ubuntu:16.04 dpkg -l nginx
 ```
 
 > Vale salientar que o método **commit** não é a melhor opção para criar imagens, pois, como verificamos, o processo de modificação da imagem é completamente manual e apresenta certa dificuldade para rastrear as mudanças efetuadas, uma vez que, o que foi modificado manualmente não é registrado, automaticamente, na estrutura do docker.
