@@ -34,6 +34,8 @@ wget -qO- https://get.docker.com/ | sh
 ```
 Aconselhamos que leia o script que está sendo executado no seu sistema operacional. Acesse [esse link](https://get.docker.com/) e analise o código assim que tiver tempo para fazê-lo.
 
+> **ATENÇÃO**: A utilização do script de conveniência não é recomendado para ambientes de produção. Este script faz a verificação do seu sistema operacional bem como as dependências, instalando os pacotes em sua versão padrão. Para ambientes de produção, siga as instruções da [Documentação Oficial](https://docs.docker.com/get-docker/)
+
 Esse procedimento demora um pouco. Após terminar o teste, execute o comando abaixo:
 
 ```
