@@ -82,11 +82,11 @@ Para restaurar esse backup utilize:
 docker container run --rm -v /tmp:/backup --volumes-from nginx-teste busybox tar -xvf /backup/backup.tar /usr/share/nginx/html
 ```
 
-Mais informação também podem ser encontradas [na resposta](http://stackoverflow.com/a/34776997/1046584), onde é possível encontrar alguns *aliases* para esses dois comandos. Esses *aliases* também estão disponíveis abaixo, na seção *Aliases*.
+Mais informação também podem ser encontradas [na resposta](https://stackoverflow.com/a/34776997/1046584), onde é possível encontrar alguns *aliases* para esses dois comandos. Esses *aliases* também estão disponíveis abaixo, na seção *Aliases*.
 
 Outras fontes são:
 
- * Documentação oficial do Docker sobre [Backup, restauração ou migração de dados (em inglês)](https://docs.docker.com/engine/userguide/containers/dockervolumes/#backup-restore-or-migrate-data-volumes)
+ * Documentação oficial do Docker sobre [Backup, restauração ou migração de dados (em inglês)](https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes)
 
  * Uma ferramenta de backup (atualmente depreciada): [docker-infra/docker-backup](https://github.com/docker-infra/docker-backup)
 
@@ -210,9 +210,9 @@ Fontes:
 Em Docker, as imagens são tradicionalmente construídas usando um arquivo `Dockerfile`. Existem alguns bons guias sobre as melhores práticas para construir imagens Docker. Recomendamos dar uma olhada:
 
 - [Documentação oficial](https://docs.docker.com/engine/articles/dockerfile_best-practices/)
-- [Guia do projeto Atomic](http://www.projectatomic.io/docs/docker-image-author-guidance/)
-- [Melhores práticas do Michael Crosby Parte 1](http://crosbymichael.com/dockerfile-best-practices.html)
-- [Melhores práticas do Michael Crosby Parte 2](http://crosbymichael.com/dockerfile-best-practices.html)
+- [Guia do projeto Atomic](https://www.projectatomic.io/docs/docker-image-author-guidance/)
+- [Melhores práticas do Michael Crosby Parte 1](https://crosbymichael.com/dockerfile-best-practices.html)
+- [Melhores práticas do Michael Crosby Parte 2](https://crosbymichael.com/dockerfile-best-practices.html)
 
 ### Use um "linter"
 
@@ -220,7 +220,7 @@ Em Docker, as imagens são tradicionalmente construídas usando um arquivo `Dock
 
 Muitas opções foram discutidas [aqui](https://stackoverflow.com/questions/28182047/is-there-a-way-to-lint-the-dockerfile).
 
-Desde janeiro de 2016, o mais completo parece ser [hadolint](http://hadolint.lukasmartinelli.ch/), disponível em duas versões: on-line e terminal. O interessante dessa ferramenta é que usa o maduro [Shell Check](http://www.shellcheck.net/about.html) para validar os comandos shell.
+Desde janeiro de 2016, o mais completo parece ser [hadolint](https://hadolint.lukasmartinelli.ch/), disponível em duas versões: on-line e terminal. O interessante dessa ferramenta é que usa o maduro [Shell Check](https://www.shellcheck.net/about.html) para validar os comandos shell.
 
 ### O básico
 
@@ -265,7 +265,7 @@ Porém, caso `debian` ainda seja muito grande, existem imagens minimalistas como
 
 Evite imagens gigantes como [`phusion/baseimage`](https://hub.docker.com/r/phusion/baseimage/). Essa imagem é muito grande, foge da filosofia de processo por contêiner e muito do que a compõe não é essencial para contêineres Docker, [veja mais aqui](https://blog.docker.com/2014/06/why-you-dont-need-to-run-sshd-in-docker/) .
 
-[Outras fontes](http://www.iron.io/microcontainers-tiny-portable-containers/)
+[Outras fontes](https://www.iron.io/microcontainers-tiny-portable-containers/)
 
 ### Use o cache de construção de camadas
 
@@ -279,7 +279,7 @@ RUN npm install
 COPY . /app
 ```
 
-Para ler mais sobre isso, veja esse [link](http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/).
+Para ler mais sobre isso, veja esse [link](https://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/).
 
 ### Limpe na mesma camada
 
@@ -299,7 +299,7 @@ Note que, segundo a [documentação](https://github.com/docker/docker/blob/03e29
 
 Evite rodar `apt-get upgrade` ou `dist-upgrade`, pois, vários pacotes da imagem base não vão atualizar dentro de um contêiner desprovido de privilégios. Se há um pacote específico a ser atualizado, simplesmete use `apt-get install -y foo` para atualizá-lo automaticamente.
 
-Para ler mais sobre o assunto, veja o [link](http://blog.replicated.com/2016/02/05/refactoring-a-dockerfile-for-image-size/) e esse [outro](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#apt-get).
+Para ler mais sobre o assunto, veja o [link](https://blog.replicated.com/2016/02/05/refactoring-a-dockerfile-for-image-size/) e esse [outro](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#apt-get).
 
 ### Use um script "wrapper" como ENTRYPOINT, às vezes
 
@@ -333,7 +333,7 @@ exec "/app"
 
 Note, **sempre** use `exec` em scripts shell que envolvem a aplicação. Desta forma, a aplicação pode receber sinais Unix.
 
-Considere também usar um sistema de inicialização simples (e.g. [dumb init](https://github.com/Yelp/dumb-init)) como a `CMD` base, assim, os sinais do Unix podem ser devidamente tratados. Leia mais [aqui](http://engineeringblog.yelp.com/2016/01/dumb-init-an-init-for-docker.html).
+Considere também usar um sistema de inicialização simples (e.g. [dumb init](https://github.com/Yelp/dumb-init)) como a `CMD` base, assim, os sinais do Unix podem ser devidamente tratados. Leia mais [aqui](https://engineeringblog.yelp.com/2016/01/dumb-init-an-init-for-docker.html).
 
 #### Log para stdout
 
