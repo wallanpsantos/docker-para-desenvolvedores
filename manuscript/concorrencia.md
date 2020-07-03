@@ -1,6 +1,6 @@
 # Concorrência
 
-A oitava boa prática da lista do modelo [12factor](http://12factor.net/pt_br), é **“Concorrência”**.
+A oitava boa prática da lista do modelo [12factor](https://12factor.net/pt_br/), é **“Concorrência”**.
 
 Durante o processo de desenvolvimento de uma aplicação é difícil imaginar o volume de requisição que ela terá no momento que for colocada em produção. Por outro lado, um serviço que suporte grandes volumes de uso é esperado nas soluções modernas. Nada é mais frustante que solicitar acesso a uma aplicação e ela não estar disponível. Sugere falta de cuidado e profissionalismo, na maioria dos casos.
 

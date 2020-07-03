@@ -57,7 +57,7 @@ Essa rede, normalmente, é utilizada para containers que manipulam apenas arquiv
 
 ![Exemplo de uso da rede none](images/rede_none.png)
 
-Em caso de dúvida sobre utilização de volumes no docker visite [esse artigo](http://techfree.com.br/2015/12/entendendo-armazenamentos-de-dados-no-docker/) e entenda mais sobre armazenamento do docker.
+Em caso de dúvida sobre utilização de volumes no docker visite [esse artigo](https://imasters.com.br/devsecops/entendendo-o-armazenamento-de-dados-docker) e entenda mais sobre armazenamento do docker.
 
 #### Host
 

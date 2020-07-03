@@ -4,7 +4,7 @@ Estamos evoluindo continuamente para entregar aplicações cada vez melhores, em
 
 Atualmente notamos o surgimento de várias opções de plataformas para facilitar a implantação, configuração e escalabilidade das aplicações que desenvolvemos. Porém, para aumentar nosso grau de maturidade não podemos apenas depender da plataforma, precisamos construir nossa aplicação seguindo boas práticas.
 
-Visando definir uma série de boas práticas comuns a aplicações web modernas, alguns desenvolvedores do [Heroku](https://www.heroku.com/) escreveram o manifesto [12Factor app](http://12factor.net/pt_br/), baseado em uma larga experiência em desenvolvimento de aplicações web.
+Visando definir uma série de boas práticas comuns a aplicações web modernas, alguns desenvolvedores do [Heroku](https://www.heroku.com/) escreveram o manifesto [12Factor app](https://12factor.net/pt_br/), baseado em uma larga experiência em desenvolvimento de aplicações web.
 
 ![](images/12factor.gif)
 

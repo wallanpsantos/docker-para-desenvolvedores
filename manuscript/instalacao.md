@@ -128,7 +128,7 @@ O **Docker Toolbox** funciona apenas em [versões 64bit](https://support.microso
 
 ![](images/windows1.png)
 
-Para verificar o suporte a virtualização do Windows 7, utilize esse [link](http://www.microsoft.com/en-us/download/details.aspx?id=592) para maiores informações.
+Para verificar o suporte a virtualização do Windows 7, utilize esse [link](https://www.microsoft.com/en-us/download/details.aspx?id=592) para maiores informações.
 
 ### Instalando o Docker Toolbox
 

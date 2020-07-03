@@ -1,6 +1,6 @@
 # Descartabilidade
 
-Na nona posição da lista do modelo [12factor](http://12factor.net/pt_br), a **“Descartabilidade”**.
+Na nona posição da lista do modelo [12factor](https://12factor.net/pt_br/), a **“Descartabilidade”**.
 
 Quando falamos de aplicações web, espera-se que mais de um processo atenda a todo tráfego requisitado para o serviço. Porém, tão importante quanto a habilidade de iniciar novos processos, a capacidade de um processo defeituoso terminar na mesma velocidade que iniciou, pois um processo que demora para finalizar pode comprometer toda solução, uma vez que ela pode ainda estar atendemos requisições de forma defeituosa.
 
