@@ -111,7 +111,8 @@ Para entendimento, vamos imaginar que três contêineres foram colocados em exec
 
 Para visualizar a lista de contêineres de um determinado **Docker host** utilizamos o comando [docker container ls](https://docs.docker.com/engine/reference/commandline/container_ls/).
 
-Esse comando é responsável por mostrar todos os contêineres, mesmo aqueles não mais em execução.
+Esse comando é responsável por mostrar todos os containers, mesmo aqueles que não estão mais em execução.
+
 
 ```
 docker container ls <parâmetros>
