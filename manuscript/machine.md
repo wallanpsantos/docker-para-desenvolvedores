@@ -16,7 +16,7 @@ Antes de explicar como utilizar o docker machine, precisamos reforçar o conheci
 
 ![](images/machine3.png)
 
-Como demonstra a imagem acima, a utilização do Docker divide-se em dois serviços: o que roda em modo daemon, em background, chamado de **Docker Host**, responsável pela viabilização dos containers no kernel Linux; e, o cliente, que chamaremos de **Docker client**, responsável por receber comandos do usuário e traduzir em gerência do **Docker Host**.
+Como demonstra a imagem acima, a utilização do Docker divide-se em dois serviços: o que roda em modo daemon, em background, chamado de **Docker Host**, responsável pela viabilização dos contêineres no kernel Linux; e, o cliente, que chamaremos de **Docker client**, responsável por receber comandos do usuário e traduzir em gerência do **Docker Host**.
 
 Cada **Docker client** é configurado para se conectar a determinado **Docker host** e nesse momento o **Docker machine** entra em ação, pois viabiliza a automatização da escolha de configuração de acesso do Docker client a distintos **Docker host**.
 
@@ -78,7 +78,7 @@ Executando o comando **ls** será possível verificar qual ambiente está ativo:
 docker-machine ls
 ```
 
-Inicie um container de teste pra testar o novo ambiente
+Inicie um contêiner de teste pra testar o novo ambiente
 
 ```
 docker container run hello-world
@@ -156,7 +156,7 @@ Verifique se o ambiente chamado teste-aws existe na lista, caso positivo, utiliz
 ```
 eval $(docker-machine env teste-aws)
 ```
-Inicie um container de teste pra verificar o novo ambiente
+Inicie um contêiner de teste pra verificar o novo ambiente
 
 ```
 docker container run hello-world
