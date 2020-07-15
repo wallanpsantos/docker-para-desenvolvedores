@@ -5,7 +5,7 @@ Com o objetivo de evitar a pulverização e baixa rastreabilidade das mudanças 
 Para essa explicação foi criado um [repositório](https://github.com/gomex/exemplo-12factor-docker.git
 ) como exemplo.
 
-Perceba que todo nosso código está dentro desse repositório e organizado por pastas, onde cada uma representa uma boa prática para facilitar a reprodução. Lembre de entrar no diretório correspondente a cada ítem apresentado.
+Perceba que todo nosso código está dentro desse repositório organizado por pastas, onde cada uma representa uma boa prática para facilitar a reprodução. Lembre de entrar no diretório correspondente a cada ítem apresentado.
 
 O Docker tem uma infraestrutura que permite a criação de variável para que o mesmo código tenha comportamento distinto com base no parâmetro de infraestrutura recebido.
 
